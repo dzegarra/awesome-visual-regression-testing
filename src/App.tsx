@@ -8,11 +8,11 @@ export function App() {
   const [showDobbleCards, setShowDobbleCards] = useState(false);
 
   return (
-    <div className="bg-slate-50 h-screen p-3 flex flex-col items-center gap-5">
+    <div className="bg-slate-50 min-h-screen p-3 flex flex-col items-center gap-5">
       <h1 className="text-5xl font-bold">Dobble generator</h1>
 
       {showDobbleCards ? (
-        <DobbleCards images={emojis} goBack={() => setShowDobbleCards(false)} randomnessFactor={0.1} />
+        <DobbleCards images={emojis} goBack={() => setShowDobbleCards(false)} randomnessFactor={0} />
       ) : (
         <ChooseEmojis
           emojis={emojis}
