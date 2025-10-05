@@ -6,3 +6,8 @@ export const Default: Story<ComponentProps<typeof Button>> = (props) => <Button 
 Default.argTypes = {
     onClick: { action: "clicked" },
 }
+
+export const Disabled: Story<ComponentProps<typeof Button>> = (props) => <Button {...props}>Button content</Button>;
+Disabled.args = {
+    disabled: true
+}
